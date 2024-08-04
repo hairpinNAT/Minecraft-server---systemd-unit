@@ -1,1 +1,1 @@
-# Minecraft-server---systemd-unit
+# Minecraft server - systemd unit
