@@ -17,7 +17,7 @@ InaccessibleDirectories=/root /sys /srv/backups -/opt /media -/lost+found
 ReadWriteDirectories=/srv/minecraft
 WorkingDirectory=/srv/minecraft/mc.fanix.cz
 
-ExecStart=/usr/bin/screen -mDS "mc.example.com" /bin/bash -c "/usr/bin/java -Xms10G -Xmx10G -DIReallyKnowWhatIAmDoingISwear -jar /srv/minecraft/mc.fanix.cz/paper.jar nogui"
+ExecStart=/usr/bin/screen -mDS "mc.example.com" /bin/bash -c "/usr/bin/java -Xms10G -Xmx10G -DIReallyKnowWhatIAmDoingISwear -jar /srv/minecraft/mc.example.com /paper.jar nogui"
 
 ExecStop=/usr/bin/screen -p 0 -S mc.example.com -X eval 'stuff "say SERVER SHUTTING DOWN IN 10 SECONDS. SAVING ALL MAPS..."\015'
 ExecStop=/bin/sleep 10
